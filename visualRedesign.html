@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Redesign</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <style>
+      .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 60, 124, 0.2);
+  transition: 0.3s;
+  margin: 20px 20px 20px 20px;
+  max-width: 1255px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,60,124,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  display:block;
+  max-width: 1255px;
+}
+.button {
+    background-color: rgb(0, 18, 105);
+    color: white;
+    border-radius: 12px;
+    padding: 14px 40px;
+    cursor: pointer;
+  }
+  .button-current {
+    background-color: rgb(37, 85, 49);
+    color: white;
+    border-radius: 12px;
+    padding: 14px 40px;
+    cursor: pointer;
+  }
+    </style>
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div id="hwm-topbar" style="display: flex; justify-content: space-between; align-items: center; background-color: rgb(165, 195, 179); font-family: Helvetica, sans-serif;">
+      <div id="title"><h1 style="padding-left: 30px;">Visual Redesign</h1></div>
+      <div id="nav-bar" style="justify-content: flex-start; padding-right: 30px;">
+        <input type="button" class="button" onClick="location.href='index.html'" value="Identifying Usability Issues">
+        <input type="button" class="button-current" onClick="location.href='visualRedesign.html'" value="Visual Redesign">
+        <input type="button" class="button" onClick="window.open('https://www.washoecountylibrary.us/libraries/incline-village.php', '_blank')" value="Original Website">
+        <input type="button" class="button" onClick="window.open('responsiveRedesign.html','_blank')" value="Responsive Redesign">
+      </div>
+      </div>
+
+      <h2 style="font-family: Helvetica, sans-serif; padding-left: 30px;">Wireframe solutions to solve issues presented by the original website:</h2>
+      <iframe src="/Users/student/Desktop/1300/responsive-redesign/VisualRedesign.pdf" width="96%" height="800px" display="">
+      </iframe>
+
+      <h2 style="font-family: Helvetica, sans-serif; padding-left: 30px;">Figma designs:</h2>
+      <div style="display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap;">
+        <div class="container">
+          <div class="card" style="flex-wrap: wrap; width:fit-content;">
+            <img src="https://i.imgur.com/7BTvowu.png" style="width: 618px; height: auto;"></img>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card" style="flex-wrap: wrap; width: 660px;">
+            <h4 style="padding-left: 30px; padding-top: 30px;"><b>Annotation</b></h4>
+            <p style="padding-left: 30px; padding-right: 30px;">This design will use a flex grid of "header", "main", and "footer". The head will consist of all top 
+              elements that stretch across the width of the page. The main will be a flex row containing two flex columns. Column one is the general information and calendar,
+              column two contains all of the resource icons. Flex wrap will wrap the second column below the content below the first column as the screen shrinks.
+            </p>
+            <p style="padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+              All links, when clicked, will send the user to a new tab. Buttons for dropdown menus will change color on hover, as well as the location, contact, and about buttons.
+              (The text remains the same color, the background of the button will change.) All clickable items will be set to cursor: pointer.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="figma" style="font-family: Helvetica, sans-serif; display:flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+        <div class="container">
+          <div class="card" style="max-height: 850px; flex-wrap: wrap;">
+            <h4 style="padding-left: 30px; padding-top: 30px;"><b>Desktop</b></h4>
+            <img src="https://i.imgur.com/q637yr0.jpg" style="height: 400px; width:fit-content;"></img>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card" style="max-height: 850px; flex-wrap: wrap;">
+            <h4 style="padding-left: 30px; padding-top: 30px;"><b>Tablet</b></h4>
+            <img src="https://i.imgur.com/K7XA2Ak.jpg" style="height: 400px; width:fit-content;"></img>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card" style="max-height: 850px; flex-wrap: wrap;">
+            <h4 style="padding-left: 30px; padding-top: 30px;"><b>Mobile</b></h4>
+            <img src="https://i.imgur.com/hypEGp6.png" style="height: 400px; width:fit-content;"></img>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>

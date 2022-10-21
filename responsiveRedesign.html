@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Incline Village Library</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="redesignstyles.css" />
+    <style>
+      body{ margin: 0px; }
+      .item1 {grid-area: header;}
+      .item2 {grid-area: main;}
+      .item3 {grid-area: footer;}
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/7a86d75748.js" crossorigin="anonymous"></script>
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div class="grid-container">
+      <div class="item1">
+        <div id="topbar" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+          <div id="logo">
+            <a href="https://www.washoecountylibrary.us/index.php"  target="_blank">
+              <img 
+              alt="Washoe County Library logo"
+              src="https://www.washoecountylibrary.us/_files/img/wcllogo.png"
+              height="50px" width="115px"></img>
+            </a>
+          </div>
+          
+            <div style="display: flex; flex-wrap: wrap;">
+              <div id="left-side" style="display: flex;">
+                <div id="location-contact-about">
+                  <input type="button" class="loc-ab-button1" onClick="window.open('responsiveRedesign.html','_blank')" value="Locations">
+                  |
+                  <input type="button" class="con-button" onClick="window.open('responsiveRedesign.html','_blank')" value="Contact"> 
+                  |
+                  <input type="button" class="loc-ab-button2" onClick="window.open('responsiveRedesign.html','_blank')" value="About">
+                </div> 
+            </div>
+            <div style="display: flex; flex-wrap: wrap;">
+                  <div class="dropdown">
+                    <button class="dropbtn"><i class="fa-solid fa-language"></i>  Language</button>
+                    <div class="dropdown-content">
+                      <a href="#">中文</a>
+                      <a href="#">English</a>
+                      <a href="#">Español</a>
+                      <a href="#">Русский</a>
+                    </div>
+                  </div>
+          
+                  <div id="my-account">
+                    <button 
+                    style="background-color: #A5C3B3;
+                    color: rgb(30, 30, 30);
+                    padding: 10px;
+                    margin: 10px;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 12px;
+                    cursor: pointer;"
+                    onClick="window.open('https://catalog.washoecountylibrary.us/MyAccount/Home','_blank')" 
+                    ><i class="fa-solid fa-user"></i>  My Account</button>
+                  </div>
+          
+                  <div id="get-card">
+                    <button 
+                    style="background-color: #A5C3B3;
+                    color: rgb(30, 30, 30);
+                    padding: 10px;
+                    margin: 10px;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 12px;
+                    cursor: pointer;"
+                    onClick="window.open('https://catalog.washoecountylibrary.us/MyAccount/SelfReg','_blank')" 
+                    ><i class="fa-solid fa-id-card"></i>  Get a Card</button>
+                  </div>
+                </div>
+          </div>
+          
+        </div>
+    
+        <div id="nav-bar">
+          <div class="btn-group" style="width: 100%;">
+            <button style="width: 20%;">Books & More</button>
+            <button style="width: 20%;">Learning & Research</button>
+            <button style="width: 20%;">Resources for You</button>
+            <button style="width: 20%;">Services</button>
+            <button style="width: 20%;">Events</button>
+          </div>
+        </div>
+        
+        <div class="search-container">
+          <div class="search-bar" style="display: block;">
+            <input type="text" placeholder="Enter a title, author, or keyword...">
+            <button class="search" 
+            onClick="window.open('https://catalog.washoecountylibrary.us/Union/Search?searchSource=local&basicType=Keyword&lookfor=tahoe+tessie', '_blank')">
+            <i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+    
+          <div class="checkboxes" style="display: flex; flex-direction: row; padding: 10px;">
+              <input type="checkbox">
+              <label style="padding-right: 15px;"> Books, Movies, Music</label>
+              <input type="checkbox">
+              <label style="padding-right: 15px;"> Articles & Research</label>
+              <input type="checkbox">
+              <label style="padding-right: 15px;"> Library Information</label>
+          </div>
+        </div>  
+        
+          <p style="margin: 5px;"><a href="">Home</a>  
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">Libraries & Hours</a>
+            <i class="fa-solid fa-angle-right"></i>
+            Incline Village Public Library</p>
+      </div>
+
+      <div class="item2" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;">
+        <div id="breadcrumb-general-events" style="display: flex; flex-direction: column;">
+        <h2 style="font-weight: normal; margin-bottom: 10px; margin-top: 10px;">Incline Village Public Library</h2>
+        <div id="image-and-info" style="display: flex;">
+          <img src="https://laketahoethisweek.com/sites/default/files/business/397/banner/mobile-incline-library.jpg"
+          style="width: 250px;
+          margin-right: 20px;
+          border: 2px solid;"></img>
+          <div id="info" style="display: flex; flex-direction: column;">
+            <table id="location">
+              <tr>
+                <th><i class="fa-solid fa-location-dot"></i></th>
+                <th><a href="https://goo.gl/maps/xjgYtekZLNR9b8hu6" target="'_blank">845 Alder Avenue, Incline Village, NV 89451</a></th>
+              </tr>
+            </table>
+
+            <table id="contact" style="text-align: left;">
+              <tr>
+                <th><i class="fa-solid fa-phone"></i></th>
+                <th>Phone:</th>
+                <th>775-832-4130</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Fax:</th>
+                <th>775-832-4180</th>
+              </tr>
+            </table>
+
+            <table id="hours" style="text-align: left;">
+              <tr>
+                <th><i class="fa-solid fa-clock"></i></th>
+                <th>Monday: </th>
+                <th>10am - 6pm</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Tuesday</th>
+                <th>10am - 7pm</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Wednesday</th>
+                <th>10am - 6pm</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Thursday</th>
+                <th>10am - 6pm</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Friday</th>
+                <th>10am - 6pm</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Saturday</th>
+                <th>Closed</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>Sunday</th>
+                <th>Closed</th>
+              </tr>
+            </table>
+          
+          </div>
+        </div>
+      
+        <h2 style="font-weight: normal"><i class="fa-regular fa-calendar-days"></i>  Upcoming Library Events</h2>
+
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=NTUxNjMwNmE2ODk3ZGI0MTczYTI4MmUwMzQ3MGNiMzFjYWQ0ZjZiNmE2YWY4M2ExMWMxMjZjYmZkNWE0MzY0N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457" 
+        style="border:solid 1px #777" width="600" height="500" frameborder="0" scrolling="no"></iframe>      
+      </div>
+    
+
+      <div style="display: flex; flex-direction: column;">
+        <h3 style="font-weight: normal; margin: 10px;"><i class="fa-solid fa-book"></i>  Staff Picks</h3>
+        <div class="staff-picks" style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap; background-color: rgb(217, 217, 217);">
+          <div style="margin: 10px;">
+            <a href="https://catalog.washoecountylibrary.us/GroupedWork/3943cd2f-1973-e482-84ee-c174b5de2862-eng/Home?searchId=4203896&recordIndex=1&page=1&searchSource=local&referred=resultIndex"
+            target="_blank">
+            <img src="https://catalog.washoecountylibrary.us/bookcover.php?id=3943cd2f-1973-e482-84ee-c174b5de2862-eng&size=medium&type=grouped_work&category=rn#Audio%20Books"
+            style="width: 110px; height: 150px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            </img>
+          </a> 
+          </div>
+          <div style="margin: 10px;">
+            <a href="https://catalog.washoecountylibrary.us/GroupedWork/72986518-f9ed-f187-ecd3-70490d60ac01-eng/Home?searchId=4203896&recordIndex=2&page=1&searchSource=local"
+            target="_blank">
+            <img src="https://catalog.washoecountylibrary.us/bookcover.php?id=72986518-f9ed-f187-ecd3-70490d60ac01-eng&size=medium&type=grouped_work&category=rn#Audio%20Books"
+            style="width: 110px; height: 150px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            </img>
+            </a>
+          </div>
+          <div style="margin: 10px;">
+            <a href="https://catalog.washoecountylibrary.us/GroupedWork/f4bee5a3-76ff-2cbc-130b-bd178925e978-eng/Home?searchId=4203896&recordIndex=3&page=1&searchSource=local"
+            target="_blank">
+            <img src="https://catalog.washoecountylibrary.us/bookcover.php?id=f4bee5a3-76ff-2cbc-130b-bd178925e978-eng&size=medium&type=grouped_work&category=rn#Audio%20Books"
+            style="width: 110px; height: 150px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            </img>
+            </a>
+          </div>
+          <div style="margin: 10px;">
+            <a href="https://catalog.washoecountylibrary.us/GroupedWork/a51163b3-3b28-7db3-8faf-6a6d05f9e9f3-eng/Home?searchId=4203896&recordIndex=4&page=1&searchSource=local"
+            target="_blank">
+            <img src="https://catalog.washoecountylibrary.us/bookcover.php?id=a51163b3-3b28-7db3-8faf-6a6d05f9e9f3-eng&size=medium&type=grouped_work&category=rn#Audio%20Books"
+            style="width: 110px; height: 150px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            </img>
+            </a>
+          </div>
+          <div style="margin: 10px;">
+            <a href="https://catalog.washoecountylibrary.us/GroupedWork/80753603-017a-a96c-fdbc-e89a6cdc9638-eng/Home?searchId=4207260&recordIndex=5&page=1&searchSource=local"
+            target="_blank">
+            <img src="https://catalog.washoecountylibrary.us/bookcover.php?id=80753603-017a-a96c-fdbc-e89a6cdc9638-eng&size=medium&type=grouped_work&category=rn#Audio%20Books"
+            style="width: 110px; height: 150px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            </img>
+            </a>
+          </div>
+        </div>
+
+        <h3 style="font-weight: normal; margin: 10px;"><i class="fa-solid fa-graduation-cap"></i>  Learn and Do</h3>
+        <div class="learn-do" style="display: flex; flex-direction: row; flex-wrap: wrap; background-color: rgb(217, 217, 217);">
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://techboomers.com/"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/digital/techboomers1.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>Tech Boomers:</b> Learn popular technology, apps, and websites with a senior focus</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://search.ebscohost.com/login.aspx?authtype=cookie,ip,cpid&custid=s9143350&profile=serrc"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/digital/smallengine.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>Small Engine Repair Reference Center:</b> Detailed, user-friendly repair guides for all manner of small engines</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://washoecountylibrary.us/downloads/mango.php"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/mango_thumb.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>Mango:</b> Easy access to language learning. More than 72 languages offered.</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://www.washoecountylibrary.us/downloads/lynda.php"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/linkedin_logo"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>LinkedIn Learning:</b> Creative, business, and technology courses for in-depth learning.</div>
+            </div>
+            </img>
+            </a>
+          </div>
+        </div>
+
+        <h3 style="font-weight: normal; margin: 10px;"><i class="fa-solid fa-book"></i>  Homework Help</h3>
+        <div class="homework-help" style="display: flex; flex-direction: row; flex-wrap: wrap; background-color: rgb(217, 217, 217);">
+          <div class="img-container" style="margin: 10px;">
+            <a href="http://www.worldbookonline.com/?subacct=M2901"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/digital/worldbook1.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>World Book:</b> With activities and a suite of research tools, it's more than an encyclopedia</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://washoecountylibrary.us/resources/home_teaching.php"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/hometeachingthumb.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>Teaching at home:</b> Help your child's education continue even when schools are closed</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://www.washoecountylibrary.us/downloads/help-now.php"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/digital/brainfusehelpnow.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>Brainfuse HelpNow:</b> Live homework help, writing lab, test prep, and other student resources</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://washoecountylibrary.us/downloads/explora.php"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/digital/explora.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>Explora: </b> Research resources and tools for students and teachers</div>
+            </div>
+            </img>
+            </a>
+          </div>
+        </div>
+
+        <h3 style="font-weight: normal; margin: 10px;"><i class="fa-solid fa-pencil"></i>  Kids and Teens</h3>
+        <div class="kids-teens" style="display: flex; flex-direction: row; flex-wrap: wrap; background-color: rgb(217, 217, 217);">
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://www.washoecountylibrary.us/downloads/tumblebooks.php"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/digital/tumblebooks1.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>TumbleBook Library: </b>A collection of talking animated picture books and picture books and eBooks for kids</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=YBuioiVW_kOlWlL14RHXHBp-J0HsU_FFjdAnyMPZb_pURDA0OEw4UjFYSjlXUUtYUlhQWjBGUlZSVi4u"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/teensurvey2022.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>Teen Survey: </b>Take our survey to help us better understand the types of events that interest you</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://washoecounty.overdrive.com/"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/digital/overdrive1.png"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>Libby/OverDrive:</b> Our main digital collection, with thousands of eBooks, AudioBooks, and magazines</div>
+            </div>
+            </img>
+            </a>
+          </div>
+          <div class="img-container" style="margin: 10px;">
+            <a href="https://washoecountylibrary.us/events/archive/1000-miles.php"
+            target="_blank">
+            <img src="https://www.washoecountylibrary.us/_files/img/1000milethumbnail"
+            style="width: 150px; height: 150px; border: solid; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            <div class="overlay">
+              <div class="img-text"><b>1,000 Miles Project</b></div>
+            </div>
+            </img>
+            </a>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div class="item3" style="display: flex; justify-content: center; background-color:rgb(217, 217, 217);">
+        <div style="display: flex; flex-direction: row; background-color: rgb(217, 217, 217); padding: 20px;">
+          <div>
+            <button onclick="document.getElementById('id01').style.display='block'" 
+            style="background-color: rgb(37, 85, 49);
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;">Credits</button>
+
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <p><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS Tutorial</a> and <a href="https://www.w3schools.com/html/" target="_blank">W3.HTML Tutorial</a></p>
+                  <p>Images and text from the Washoe County Library System website</p>
+                  <p>Icons from <a href="https://fontawesome.com/icons" target="_blank">Font Awesome</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+
+</html>

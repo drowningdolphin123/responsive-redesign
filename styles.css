@@ -1,0 +1,166 @@
+
+
+/* Uncomment below if images are way too big.
+Selects all image tags and makes them 500px;
+ */
+img {
+  width: 500px;
+  margin: 20px;
+  border: 2px solid;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'current-issues'
+    'wave'
+    'footer';
+  gap: 10px;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+}
+
+.description{
+max-width: 1300px;
+}
+
+.container {
+  display: flex;
+  max-width: 1300px;
+}
+
+.card{
+  background-color: #eee;
+}
+
+
+
+.washingmachine {
+  border: 12px solid;
+}
+
+.and-menu {
+  display: flex;
+}
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: white;
+}
+
+.hwm-topbar {
+  display: flex;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.fa-square-xmark{
+  color: rgb(186, 56, 56);
+}
+.fa-circle-half-stroke{
+  color: rgb(186, 56, 56)
+}
+.fa-triangle-exclamation{
+  color: rgb(227, 142, 23)
+}
+.fa-circle-check{
+  color: rgb(69, 133, 101);
+}
+.fa-diagram-project{
+  color: rgb(72, 119, 181);
+}
+.fa-cube{
+  color: rgb(72, 36, 110);
+}
+
+#washer-settings2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+#washer-settings2 td, #washer-settings2 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#washer-settings2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#tab {background-color: #eee;}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+    width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+background-color: #ccc; 
+}
+
+.accordion:after {
+content: '\002B';
+color: #777;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+
+.active:after {
+content: "\2212";
+}
+
+.panel {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  cursor: default;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  text-align: left;
+  padding: 5px 0;
+  border-radius: 6px;
+  color: black;
+  opacity: 95%;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+

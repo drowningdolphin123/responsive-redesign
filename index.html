@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Redesign</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <style>
+      .item1 {grid-area: header;}
+      .item2 {grid-area: main;}
+      .item3 {grid-area: current-issue;}
+      .item4 {grid-area: wave;}
+      .item5 {grid-area: footer;}
+
+      .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      height: max-content;
+      width: max-content;
+      padding: 10px;
+      }
+
+      .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      .container {
+      padding: 2px 16px;
+      }
+      
+
+  .button {
+    background-color: rgb(0, 18, 105);
+    color: white;
+    border-radius: 12px;
+    padding: 14px 40px;
+    cursor: pointer;
+  }
+  .button-current {
+    background-color: rgb(37, 85, 49);
+    color: white;
+    border-radius: 12px;
+    padding: 14px 40px;
+    cursor: pointer;
+  }
+    </style>
+    <script src="https://kit.fontawesome.com/7a86d75748.js" crossorigin="anonymous"></script>
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div class="item1" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+      <div id="hwm-topbar" style="display: flex; justify-content: space-between; align-items: center; background-color: rgb(165, 195, 179); font-family: Helvetica, sans-serif; ">
+      <div id="title"><h1 style="padding-left: 30px;">Incline Village Library Site Usability</h1></div>
+      <div id="nav-bar" style="justify-content: flex-start; padding-right: 30px;">
+        <input type="button" class="button-current" onClick="location.href='index.html'" value="Identifying Usability Issues">
+        <input type="button" class="button" onClick="location.href='visualRedesign.html'" value="Visual Redesign">
+        <input type="button" class="button" onClick="window.open('https://www.washoecountylibrary.us/libraries/incline-village.php', '_blank')" value="Original Website">
+        <input type="button" class="button" onClick="window.open('responsiveRedesign.html','_blank')" value="Responsive Redesign">
+      </div>
+      </div>
+    </div>
+
+    <div class="item2">
+      <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;">
+      <div class="pickingWebPage" style="display: flex">
+        <video width="550px" height="390px" controls style="margin-top: 20px; border: solid;">
+        <source src="https://i.imgur.com/Lm7C4sk.mp4" type="video/mp4">
+        <embed width="30%" height="auto" allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash">
+        </video>
+        <script>
+          var test = document.getElementById('video');
+          test.addEventListener("play", vfocus, false)
+          test.focus();
+          function vfocus(){
+            test.focus();
+          }
+          function vpause() {
+            test.pause();
+          }
+        </script>
+        </div>
+        <div class="description" style="font-family: Helvetica, sans-serif;">
+          <h3 style="max-width: 550px;  padding-left: 20px; font-weight: normal;">Washoe County isn’t much for books; why stay inside when you have 
+          <a href="https://www.gotahoenorth.com/webcams/" target="_blank">this as your back yard</a>?
+          As a resort community extolling outdoor adventures, the Incline Village Branch of the Washoe County Public Library needs help to draw people into services and books.
+          It is a beautiful building with a fireplace and well stocked, but always empty... maybe a better website would help.
+          </h3>
+          <h3 style="max-width: 550px; padding-left: 20px; font-weight: normal;">
+            The Incline Village Library website provides essential information but is neither aesthetically pleasing or engaging. 
+            Compared to <a href="https://www.saclibrary.org/" target="_blank">other library websites</a> in nearby areas, this website could do a better job of engaging 
+            the community and encouraging reading amongst all ages.
+          </h3>
+          <div id="buttons" style="padding: 20px;">
+            <input type="button" class="button" onClick="window.open('https://www.washoecountylibrary.us/libraries/incline-village.php', '_blank')" value="Original Website">
+            <input type="button" class="button" onClick="window.open('responsiveRedesign.html','_blank')" value="Responsive Redesign">
+          </div>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+
+    <div class="item3" style="display: flex; flex-direction: column; align-items: center; margin-left: 15px; margin-right: 15px;">
+      <h3 
+      style="font-family: Helvetica, sans-serif; background-color:rgb(165, 195, 179); width: 100%; padding: 30px; margin-left: 30px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+      Current Issues</h3>
+    <div class="current-issues" style="display: flex; flex-direction: column; font-family: Helvetica, sans-serif;">
+      <div class="container">
+        <div class="card" style="max-width: 850px; flex-wrap: wrap;">
+          <h4><b>Usability</b></h4>
+          <p>
+            <ul>
+              <li>The click-through rate is fast, however, there are so many things to click click-through
+                to find what you are looking for that some vital information could be hidden.
+              </li>
+              <li>Navigating back to the page you were on (for example going from the Incline Village Library page
+                to the Contact Us page and then going back) is not intuitive and requires multiple steps if you
+                don't use the back button.
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card" style="max-width: 850px; flex-wrap: wrap;">
+          <h4><b>Learnability</b></h4>
+          <p>
+            <ul>
+              <li>Depending on what users need from the library, they could find the site
+                easy or overwhelming. If they need more than location, hours, and contact information, they could
+                spend a lot of time scrolling and clicking through the page to find the resource they need.
+              </li>
+              <li>Since a lot of the information about specific services and events 
+                are hidden behind drop down menus or click-through pages, there is a bit of a learning curve to
+                get to the exact page a user may need.
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card" style="max-width: 850px; flex-wrap: wrap;">
+          <h4><b>Memorability</b></h4>
+          <p>
+            <ul>
+              <li>
+                For the search feature it is very easy to recall what to do, and since it opens the result in a 
+                new tab users can return to the previous page to continue finding resources.
+              </li>
+              <li>
+                The headers on the dropdown menus are descriptive, however, there are so many options that 
+                it can be difficult to navigate to what a user might need. 
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card" style="width: 850px; flex-wrap: wrap;">
+          <h4><b>Conceptual Design</b></h4>
+          <p>
+            <ul>
+              <li>Links change color on hover, however both the original color and hover color are difficult to see on a white background.</li>
+              <li>Navigation bar with drop down menus for each item in the bar.</li>
+              <li>Search bar for finding items within the library catalog and library resource list.</li>
+              <li>Additional resource links and buttons along right column and footer to navigate to more pages within the library site.</li>
+            </ul>
+          </p>
+        </div>   
+      </div>
+    </div>
+    </div>
+
+    <div class="item4" style="display: flex; flex-direction: column; align-items: center; margin-left: 15px; margin-right: 15px;">
+      <h3 style="font-family: Helvetica, sans-serif; background-color:rgb(165, 195, 179); width: 100%; padding: 30px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">Accessibility with WebAIM Wave</h3>
+
+      <div class="accessibility" style="display: flex; padding: 10px; font-family: Helvetica, sans-serif;">
+          <div id="numbers" class="container">
+            <div class="card2">
+            <table id="washer-settings2">
+              <tr>
+                <th id="tab">Summary</th>
+              </tr>
+              <tr>
+                <th id="error">
+                  <div class="tooltip">
+                  <i class="fa-solid fa-square-xmark"></i> <span>90</span>
+                  <p style="font-weight: lighter; margin: 0px;">Errors</p>
+                  <span class="tooltiptext" style="background-color: rgb(186, 56, 56);">
+                    <ul>
+                      <li>Linked images were missing alternative text.</li>
+                      <li>Missing form labels.</li>
+                      <li>Language missing or invalid.</li>
+                      <li>Empty buttons.</li>
+                      <li>Empty links.</li>
+                    </ul>
+                  </span>
+                </div>
+                </th>
+                <th id="contrast">
+                  <div class="tooltip">
+                    <i class="fa-solid fa-circle-half-stroke"></i> <span>5</span>
+                  <p style="font-weight: lighter; margin: 0px;">Contrast Errors</p>
+                  <span class="tooltiptext" style="background-color: rgb(186, 56, 56);">
+                    <ul>
+                      <li>Very low contrast with the light green links on white background.</li>
+                    </ul>
+                  </span>
+                  </div>
+                </th>
+              </tr>
+              <tr></tr>
+              <tr></tr>
+              <tr>
+                <th id="alert">
+                  <div class="tooltip">
+                    <i class="fa-solid fa-triangle-exclamation"></i> <span>20</span>
+                  <p style="font-weight: lighter; margin: 0px;">Alerts</p>
+                    <span class="tooltiptext" style="background-color: rgb(227, 142, 23);">
+                      <ul>
+                        <li>Missing fieldset.</li>
+                        <li>Unlabeled form control with title.</li>
+                        <li>Skipped heading level.</li>
+                        <li>Suspicious link text.</li>
+                        <li>Redundant link.</li>
+                        <li>Noscript element.</li>
+                        <li>Very small text.</li>
+                        <li>Underlined text.</li>
+                        <li>Layout table.</li>
+                        <li>YouTube video.</li>
+                      </ul>
+                    </span>
+                  </div> 
+                </th>
+                <th id="feature">
+                  <div class="tooltip">
+                    <i class="fa-solid fa-circle-check"></i> <span>16</span>
+                    <p style="font-weight: lighter; margin: 0px;">Features</p>
+                    <span class="tooltiptext" style="background-color: rgb(69, 133, 101);">
+                      <ul>
+                        <li>Linked images with alternative text.</li>
+              <li>Form labels.</li>
+              <li>Language.</li>
+                      </ul>
+                    </span>
+                  </div>
+                </th>
+              </tr>
+              <tr></tr>
+              <tr></tr>
+              <tr>
+                <th id="structure">
+                  <div class="tooltip">
+                    <i class="fa-solid fa-diagram-project"></i> <span>127</span>
+                  <p style="font-weight: lighter; margin: 0px;">Structural Elements</p>
+                  <span class="tooltiptext" style="background-color: rgb(72, 119, 181);">
+                    <ul>
+                      <li>Heading level 1.</li>
+              <li>Heading level 3.</li>
+              <li>Unordered list.</li>
+              <li>Inline frame.</li>
+              <li>Header.</li>
+              <li>Navigation.</li>
+              <li>Footer.</li>
+                    </ul>
+                  </span>
+                  </div>
+                </th>
+                <th id="aria">
+                  <div class="tooltip">
+                    <i class="fa-solid fa-cube"></i> <span>91</span>
+                  <p style="font-weight: lighter; margin: 0px;">ARIA</p>
+                  <span class="tooltiptext" style="background-color: rgb(124, 92, 157);">
+                    <ul>
+                      <li>ARIA.</li>
+              <li>ARIA lavel.</li>
+              <li>ARIA tabindex.</li>
+              <li>ARIA alert or live region.</li>
+              <li>ARIA hidden.</li>
+                    </ul>
+                  </span>
+                  </div>
+                </th>
+              </tr>
+            </table>
+          </div>
+          </div>
+
+          <div id="information" style="flex-direction: column;">
+          <button class="accordion"><i class="fa-solid fa-square-xmark"></i>  Errors</button>
+          <div class="panel">
+            <ul>
+              <li>Most icons and images in the original page lacked alt text tags.</li>
+              <li>For the redesign, every visual element that isn't text should include an alt tag.</li>
+            </ul>
+          </div>
+
+          <button class="accordion"><i class="fa-solid fa-circle-half-stroke"></i>  Contrast</button>
+          <div class="panel">
+            <ul>
+              <li>Low contrast detected in the links in the <a style="background-color:rgb(165, 195, 179)">green</a> color.</li>
+              <li>Because the text is smaller and it is on a white background, it is difficult to see.</li>
+              <li>For the redesign, these links will be in colors that contrast with the background and may be contained in buttons to emphasize what they are.</li>
+            </ul>
+          </div>
+
+          <button class="accordion"><i class="fa-solid fa-triangle-exclamation"></i>  Alerts</button>
+          <div class="panel">
+            <ul>
+              <li>Some of the text is extremely small and difficult to read when combined with the light green color.</li>
+              <li>For the redesign, text will be contrast to the background and at a readable font.</li>
+            </ul>
+          </div>
+
+          <button class="accordion"><i class="fa-solid fa-circle-check"></i>  Features</button>
+          <div class="panel">
+            <ul>
+              <li>Some images included the alt text! (Yay!)</li>
+              <li>For the redesign, making sure all images and icons include the alt text.</li>
+            </ul>
+          </div>
+
+          <button class="accordion"><i class="fa-solid fa-diagram-project"></i>  Structural Elements</button>
+          <div class="panel">
+            <ul>
+              <li>The redesign will include many of the same structural elements used in the correct format.</li>
+            </ul>
+          </div>
+
+          <button class="accordion"><i class="fa-solid fa-cube"></i>  ARIA</button>
+          <div class="panel">
+            <ul>
+              <li>The redesign will be able to be tabbed through with ease.</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="item5"></div>
+
+          <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+           acc[i].addEventListener("click", function() {
+             this.classList.toggle("active");
+             var panel = this.nextElementSibling;
+             if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+           });
+          }
+</script>
+        </div>
+
+      </div>
+  </body>
+
+</html>
